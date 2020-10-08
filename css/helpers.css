@@ -1,0 +1,216 @@
+/* Typography */
+.ul {
+    text-decoration: underline;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.ital {
+    font-style: italic;
+}
+
+/* Margin Horizontal */
+.m-x-1 {
+    margin: 0 1rem;
+}
+
+.m-x-2 {
+    margin: 0 2rem;
+}
+
+.m-x-3 {
+    margin: 0 3rem;
+}
+
+/* Margin Vertical */
+.m-y-1 {
+    margin: 1rem 0;
+}
+
+.m-y-2 {
+    margin: 2rem 0;
+}
+
+.m-y-3 {
+    margin: 3rem 0;
+}
+
+/* Margin Bottom */
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+.m-b-2 {
+    margin-bottom: 2rem;
+}
+
+.m-b-3 {
+    margin-bottom: 3rem;
+}
+
+/* Containers */
+.cont {
+    margin: 0 3rem 1.5rem 3rem;
+}
+
+.cont.full {
+    width: 100%;
+}
+
+.cont--fluid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cont--fluid > .column {
+    display: inline-flex;
+    flex-flow: column wrap;
+}
+
+/* Container Mobile */
+@media only screen and (max-width: 680px) {
+    .cont {
+    margin: 0 1rem 0.5rem 1rem;
+    } 
+}
+
+/* Fluid X Alignment */
+.flow-x-start {
+    justify-content: flex-start;
+}
+
+.flow-x-center {
+    justify-content: center;
+}
+
+.flow-x-end {
+    justify-content: flex-end;
+}
+
+.flow-around {
+    justify-content: space-around;
+}
+
+.flow-between {
+    justify-content: space-between;
+}
+
+.flow-evenly {
+    justify-content: space-evenly;
+}
+
+/* Fluid Y Alignment */
+.flow-y-start {
+    align-items: flex-start;
+}
+
+.flow-y-center {
+    align-items: center;
+}
+
+.flow-y-end {
+    align-items: flex-end;
+}
+
+/* Fluid 12 Column Grid */
+.is-1 {
+    min-width: 8.33%;
+    flex: 12;
+}
+
+.is-2 {
+    min-width: 16.66%;
+    flex: 11;
+}
+
+.is-3 {
+    min-width: 25%;
+    flex: 10;
+}
+
+.is-4 {
+    min-width: 33.33%;
+    flex: 9;
+}
+
+.is-5 {
+    min-width: 41.66%;
+    flex: 8;
+}
+
+.is-6 {
+    min-width: 50%;
+    flex: 7;
+}
+
+.is-7 {
+    min-width: 58.33%;
+    flex: 6;
+}
+
+.is-8 {
+    min-width: 66.66%;
+    flex: 5;
+}
+
+.is-9 {
+    min-width: 75%;
+    flex: 4;
+}
+
+.is-10 {
+    min-width: 83.33%;
+    flex: 3;
+}
+
+.is-11 {
+    min-width: 91.66%;
+    flex: 2;
+}
+
+.is-12 {
+    min-width: 100%;
+    flex: 1;
+}
+
+/* Grid Mobile */
+@media only screen and (max-width: 680px) {
+    .is-1
+    .is-2,
+    .is-3,
+    .is-4,
+    .is-5,
+    .is-6,
+    .is-7,
+    .is-8,
+    .is-9,
+    .is-10,
+    .is-11,
+    .is-12 {
+    min-width: 100%;
+    flex: 1;
+    }
+}
+
+/* Avatar */
+.avatar {
+    border: 5px solid var(--color-accent);
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar > * {
+    border-radius: 50%;
+}
+
+/* Avatar Mobile */
+@media only screen and (max-width: 680px) {
+    .avatar {
+    margin: 2rem 0; 
+    }
+}

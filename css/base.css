@@ -1,0 +1,97 @@
+/* Variables */
+:root {
+    /*
+    * Color Scheme
+    */
+
+    --color-primary: rgb(25, 25, 25);
+    --color-primary-invert: rgb(215, 215, 215);
+    
+    --color-accent: rgb(225, 45, 90);
+    
+    --color-secondary: rgb(245, 245, 245);
+    --color-secondary-invert: rgb(45, 45, 45);
+    
+    /* Links */
+    --color-link: rgb(120, 25, 45);
+    --color-link--hover: rgb(180, 25, 45);
+    --color-link--active: rgb(215, 45, 15);
+    
+    /*
+    * Typography
+    */
+    
+    /* Base font size */
+    --font-size-base: 16px;
+    
+    /* Font grow range */
+    --font-min: 16;
+    --font-max: 18;
+    
+    /* Responsive Typography */
+    --font-responsive: calc(var(--font-size-base) + (var(--font-max) - var(--font-min)) * ((100vw - 320px) / 680));
+    
+    /* Font Face */
+    --font-header: 'Roboto', sans-serif;
+    --font-normal: 'Open Sans', sans-serif;
+}
+
+/* 
+* Global Styling
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-invert);
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: var(--font-normal);
+    font-size: var(--font-responsive);
+    line-height: 1.5;
+}
+
+/* Heading Levels */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Links */
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link--hover);
+}
+
+a:active {
+    color: var(--color-link--active);
+}
