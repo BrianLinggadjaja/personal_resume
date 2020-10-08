@@ -1,2 +1,2 @@
-# personal_resume
-My Web-Based Personal Resume
+# Web-Based Personal Resume
+https://brianlinggadjaja.github.io/personal_resume/
